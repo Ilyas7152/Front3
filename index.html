@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FightWear Store - Магазин одежды для единоборств</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+       
+        @media (min-width: 768px) and (max-width: 1023px) {
+            h1, h2, h3 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+        @media (max-width: 767px) {
+            h1, h2, h3 {
+                font-size: 18px;
+            }
+            p {
+                font-size: 12px;
+            }
+        }
+        .container1 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
+        .box {
+            background-color: #1e1e1e;
+            border: 2px solid #dc3545;
+            padding: 20px;
+            text-align: center;
+            flex: 1 1 30%; 
+            box-sizing: border-box;
+        }
+        @media (max-width: 1023px) and (min-width: 768px) { /* dlya planshetov */ 
+            .box {
+                flex: 1 1 48%;
+            }
+        }
+        @media (max-width: 767px) {  /* phones*/
+            .box {
+                flex: 1 1 100%;
+            }
+        }
+        .custom-card {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        .sidebar {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border: 1px solid #333;
+        }
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+         <!--expand lg на больших экранах в строку на маленьк сожмется-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top px-3">   
+    <a class="navbar-brand  fw-bold" href="#">FightWear</a>
+      
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse justify-content-end" id="menu">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#start">FightWear</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Assort">Ассортимент</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Instock">В наличии</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Магазин</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <div class="container my-5" id="start">
+        <h1 class="text-center text-danger mb-4">FightWear</h1>
+        <div class="text-center bg-dark p-4 border solid">
+            <h2>Экипировка для единоборств</h2>
+            <p>Магазин по продаже вещей для всех видов единоборств</p>
+        </div>
+    </div>
+
+    <div class="container my-5" id="Assort">
+        <h2 class="text-center text-danger mb-4">Ассортимент</h2>
+        <div class="container1">
+            <div class="box">
+                <h3>Боксерские перчатки</h3>
+                <p>Профессиональные перчатки для тренировок и спаррингов.</p>
+            </div>
+            <div class="box">
+                <h3>Рашгарды</h3>
+                <p>Компрессионная одежда для борьбы и MMA.</p>
+            </div>
+            
+            <div class="box">
+                <h3>Шорты MMA</h3>
+                <p>Прочные и эластичные шорты для ударной техники и борьбы.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5" id="Instock">
+        <h2 class="text-center text-danger mb-4"> В наличии:</h2>
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="p-3 bg-dark border border-danger text-center h-100">
+                    <h3>Капа</h3>
+                    <p>Надежная защита зубов для любых единоборств.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="p-3 bg-dark border border-danger text-center h-100">
+                    <h3>Бинты</h3>
+                    <p>Хлопковые боксерские бинты для фиксации запястий.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-4">
+                <div class="p-3 bg-dark border border-danger text-center h-100">
+                    <h3>Шлем</h3>
+                    <p>Защитный открытый и закрытый шлем для спаррингов.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5" id="portfolio">
+        <h2 class="text-center text-danger mb-4">Магазин одежды для единоборств</h2>
+        <div class="row">
+            <div class="col-lg-8">
+                <h3 class="mb-3">Каталог товаров</h3>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="card custom-card p-3">
+                            <h4>Кимоно для BJJ</h4>
+                            <p>Плотное ги для бразильского джиу-джитсу.</p>
+                            <span class="text-danger fw-bold">45,000 тг</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card custom-card p-3">
+                            <h4>Борцовки</h4>
+                            <p>Обувь для вольной и греко-римской борьбы.</p>
+                            <span class="text-danger fw-bold">30,000 тг</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card custom-card p-3">
+                            <h4>Тайские шорты</h4>
+                            <p>Традиционные шорты для муай-тай.</p>
+                            <span class="text-danger fw-bold">18,000 тг</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card custom-card p-3">
+                            <h4>Защита ног</h4>
+                            <p>Щитки для голени и стопы.</p>
+                            <span class="text-danger fw-bold">25,000 тг</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4 mt-lg-0">
+                <div class="sidebar">
+                    <h3>О магазине</h3>
+                    <p>FightWear — специализированный магазин лучшей экипировки для единоборств.</p>
+                    <h4 class="mt-4">Контакты</h4>
+                    <p>Телефон: +7 (777) 123-321-77</p>
+                    <p>Город: Астана</p>
+                    <p>Email: fightwear@mail.ru</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 FightWear Store. Спорт-жизнь.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
