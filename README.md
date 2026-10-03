@@ -12,6 +12,7 @@
 
 4Task Here is my portfolio <img width="588" height="593" alt="image" src="https://github.com/user-attachments/assets/660ffb67-166e-419a-bd2e-c0b68d6d0137" /> <img width="597" height="263" alt="image" src="https://github.com/user-attachments/assets/e0b43b7c-ca9c-4280-9032-43a9e98cdca4" /> <img width="280" height="256" alt="image" src="https://github.com/user-attachments/assets/7572c049-2698-482e-8808-c27ba02002ed" /> and here is the result <img width="238" height="154" alt="image" src="https://github.com/user-attachments/assets/43d1e906-8ece-4a76-9655-224f49f43cf1" /> 2.	Main section divided into two parts:Left side: portfolio projects (used Bootstrap grid to arrange cards).	Right side: sidebar with personal info and contact details	Footer across the bottom.
 
+Summary:That's all my work.Every part is described higher :)
 
 
 
